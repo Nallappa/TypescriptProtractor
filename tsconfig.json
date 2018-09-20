@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "declaration": false,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "rootDir": "./",
+    "outDir": "ConvertedJSFiles",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "types": ["jasmine", "node"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+
