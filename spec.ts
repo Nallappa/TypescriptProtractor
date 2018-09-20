@@ -3,28 +3,76 @@
 //  */
 
 
-import {browser, element, by} from 'protractor';
-import  data  from "./AngularApp/data/commondata";
-import { BasePage }  from "./AngularApp/pages/BasePage";
-import  { Mainflow } from "./AngularApp/pages/HomePage";
-import  { dropdwonutil }   from "./AngularApp/util/dropdownutil";
+import { browser, element, by, ExpectedConditions, protractor} from 'protractor'
+import { Alert, WebElement } from 'selenium-webdriver';
+// const fs = require('fs');
+// https://chercher.tech/protractor/json-file-protractor#nested
+
+describe('Protractor Typescript Demo', function() {
+	const fs = require('fs');
+	let sampleMap = new Map();
+	browser.ignoreSynchronization = true; // for non-angular websites
+	it('Javascript executions', function() {
+		// set implicit time to 30 seconds
+		browser.manage().timeouts().implicitlyWait(30000);
+		// navigate to the url
+		browser.get("https://google.com");
+
+		// read the file into raw data
+		let rawdata = fs.readFileSync('D:\\Test.JSON');
+
+		// parse the raw data into meaningful JSON format
+		let web = JSON.parse(rawdata);
+
+		let author = web["author"]
+		browser.sleep(1).then(function(){
+			console.log("\n\n###### Author value ########\n")
+			console.log(author)
+		})
+
+		let website = author["website"]
+		browser.sleep(1).then(function(){
+			console.log("\n\n****** Website value ******\n")
+			console.log(website)
+		})
+
+		let taglineBySteps = website["tagline"]
+		browser.sleep(1).then(function(){
+			console.log("\n\n@@@@@@ tagline value @@@@@\n")
+			console.log(taglineBySteps)
+		})
+
+		let taglineDirect = web["author"]["website"]["tagline"]
+		browser.sleep(1).then(function(){
+			console.log("\n\n^^^^^^^ tagline value  Direct^^^^^^\n")
+			console.log(taglineDirect)
+		})
+		element(by.name("q")).sendKeys(taglineBySteps);
+	});
+});
+
+// import {browser, element, by} from 'protractor';
+// import  data  from "./AngularApp/data/commondata";
+// import { BasePage }  from "./AngularApp/pages/BasePage";
+// import  { Mainflow } from "./AngularApp/pages/HomePage";
+// import  { dropdwonutil }   from "./AngularApp/util/dropdownutil";
 // import { Mainflow } from "./AngularApp/objects/objHomePage";
 
-let Base = new BasePage();
-let Home = new Mainflow();
-let Drop = new dropdwonutil();
+// let Base = new BasePage();
+// let Home = new Mainflow();
+// let Drop = new dropdwonutil();
 
-describe('Bank Manager Login Test', function() {
+// describe('Bank Manager Login Test', function() {
 
-    it('Login as Bank Manager', function() {
-        browser.sleep(2000);
-        Base.navigateToURL(data.testsiteurl);
-        browser.sleep(2000);
-        Base.getPageTitle();
-        Home.BankManagerlogin();
-        Home.Customerlogin();
-        browser.sleep(4000);
-    }),'60000';
+//     it('Login as Bank Manager', function() {
+//         browser.sleep(2000);
+//         Base.navigateToURL(data.testsiteurl);
+//         browser.sleep(2000);
+//         Base.getPageTitle();
+//         Home.BankManagerlogin();
+//         Home.Customerlogin();
+//         browser.sleep(4000);
+//     }),'60000';
 
     // it("Add Customer",function(){
     //     Customer.gotoAddCustomer();
@@ -38,7 +86,7 @@ describe('Bank Manager Login Test', function() {
     //     // Customer.validateCustomerRecords();
     // }) ;
 
-});
+// });
 
 
 

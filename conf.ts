@@ -6,7 +6,7 @@ export let config: Config = {
   capabilities: {
     browserName: 'chrome'
   },
-
+  getPageTimeout : 1000, //for page timeouts
   // suites:{
   //   smoke:'.spec.js',
   //   sanity:['./AngularApp/spec/spec1.js','./AngularApp/spec/spec2.js']
@@ -23,6 +23,8 @@ export let config: Config = {
     onPrepare: () => {
         let globals = require('protractor');
         let browser = globals.browser;
+        allScriptsTimeout : 30000;
+        // browser.waitForAngularEnabled(false)
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(5000);
     },
