@@ -1,34 +1,95 @@
 
 
 import {Config} from 'protractor';
+import { browser, element, by, ExpectedConditions, protractor,ElementFinder} from 'protractor'
+
+import {HtmlReporter} from 'protractor-beautiful-reporter';
+const { SpecReporter } = require('jasmine-spec-reporter');
+const jasmineReporters = require('jasmine-reporters');
+const HTMLReport = require('protractor-html-reporter-2');
+const fs = require('fs-extra');
+const path = require('path');
+
 export let config: Config = {
   framework: 'jasmine',
   capabilities: {
     browserName: 'chrome'
   },
   getPageTimeout : 1000, //for page timeouts
-  // suites:{
-  //   smoke:'.spec.js',
-  //   sanity:['./AngularApp/spec/spec1.js','./AngularApp/spec/spec2.js']
-  // // protractor protractor.conf.js --suite smoke
-  // },
-  
-    specs: [ 'spec.js' ],
-
+    // specs: ['./AngularApp/spec/Customerspec.js'],
+    specs: ['./AngularApp/spec/BankManagerLoginspec.js'],
+    
   seleniumAddress: 'http://localhost:4444/wd/hub',
+//   params: {
+//     login: {
+//         user: 'protractor-br',
+//         password: '#ng123#'
+//     }
+// },
     jasmineNodeOpts: {
-        defaultTimeoutInterval: 90000
+        defaultTimeoutInterval: 90000, showColors: true,
+        isVerbose: true,
+        includeStackTrace: true
     },
+//     suites: {
+//       smoke: ['./smoke/!*.spec.js'],
+//       regression: ['./regression/!*.spec.js'],
+//       functional: ['./functional/!*.spec.js'],
+//       all: ['./!*!/!*.spec.js'],
+//       selected: ['./functional/addcustomer.spec.js','./regression/openaccount.spec.js'],
+//   //    protractor protractor.conf.js --suite smoke //to run specific file
+// },
 
-    onPrepare: () => {
-        let globals = require('protractor');
-        let browser = globals.browser;
-        allScriptsTimeout : 30000;
-        // browser.waitForAngularEnabled(false)
-        browser.manage().window().maximize();
-        browser.manage().timeouts().implicitlyWait(5000);
-    },
-  noGlobals: true,
+onPrepare() {
+  fs.emptyDir('AngularApp/_report', (err) => { err && console.log(err); });
+  const jasmineEnv = jasmine.getEnv();
+  const specReporter = new SpecReporter({ spec: { displayStacktrace: true } });
+  const xmlReporter = new jasmineReporters.JUnitXmlReporter({
+    consolidateAll: true,
+    savePath: './AngularApp/_report',
+    filePrefix: 'e2exmlresults'
+  });
+  const screenshotReporter = {
+    specDone: function (result) {
+      if (result.status === 'failed') {
+        browser.getCapabilities().then(function (caps) {
+          const browserName = caps.get('browserName');
+
+          browser.takeScreenshot().then(function (png) {
+            const stream = fs.createWriteStream('AngularApp/_report/' + browserName + '-' + result.fullName + '.png');
+            stream.write(new Buffer(png, 'base64'));
+            stream.end();
+          });
+        });
+      }
+    }
+  };
+  jasmineEnv.addReporter(specReporter);
+  jasmineEnv.addReporter(xmlReporter);
+  jasmineEnv.addReporter(screenshotReporter);
+},
+onComplete: function() {
+  let browserName, browserVersion, platform;
+  const capsPromise = browser.getCapabilities();
+
+  capsPromise.then(function (caps) {
+    browserName = caps.get('browserName');
+    browserVersion = caps.get('version');
+    platform = caps.get('platform');
+    const testConfig = {
+      reportTitle: 'Protractor Test Report',
+      outputPath: './AngularApp/_report',
+      outputFilename: 'ProtractorTestReport',
+      screenshotPath: '.',
+      testBrowser: browserName,
+      browserVersion: browserVersion,
+      modifiedSuiteName: false,
+      screenshotsOnlyOnFailure: true,
+      testPlatform: platform
+    };
+    new HTMLReport().from('AngularApp/_report/e2exmlresults.xml', testConfig);
+  });
+}     
 };
 
 

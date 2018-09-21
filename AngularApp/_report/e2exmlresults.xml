@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="1" time="10.177">
+ <testsuite name="Bank Manager Login Test" timestamp="2018-09-21T21:36:18" hostname="localhost" time="10.177" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="Bank Manager Login Test" name="Bank Manager Test" time="7.735">
+   <failure type="toEqual" message="Expected [ &apos;Pasavala&apos; ] to equal &apos;PasavalaJust to pass&apos;."><![CDATA[Error: Failed expectation
+    at C:\Users\nalpasav\DemoTypescript\AngularApp\pages\Addcustomerdetails.ts:70:26
+    at ManagedPromise.invokeCallback_ (C:\Users\nalpasav\DemoTypescript\node_modules\selenium-webdriver\lib\promise.js:1366:14)
+    at TaskQueue.execute_ (C:\Users\nalpasav\DemoTypescript\node_modules\selenium-webdriver\lib\promise.js:2970:14)
+    at TaskQueue.executeNext_ (C:\Users\nalpasav\DemoTypescript\node_modules\selenium-webdriver\lib\promise.js:2953:27)
+    at asyncRun (C:\Users\nalpasav\DemoTypescript\node_modules\selenium-webdriver\lib\promise.js:2813:27)
+    at C:\Users\nalpasav\DemoTypescript\node_modules\selenium-webdriver\lib\promise.js:676:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>

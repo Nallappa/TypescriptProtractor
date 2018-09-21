@@ -23,6 +23,7 @@
     "@types/jasminewd2": "^2.0.3",
     "angular-cli": "^1.0.0-beta.28.3",
     "npm-run-all": "^4.0.2",
+    "path": "^0.12.7",
     "protractor-beautiful-reporter": "^1.2.5",
     "protractor-html-reporter-2": "^1.0.4",
     "ts-node": "^3.0.2",

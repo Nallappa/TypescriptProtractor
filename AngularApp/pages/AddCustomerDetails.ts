@@ -67,7 +67,7 @@ let dropdown = new dropdownutil();
         Addcustomerdetails.Searchcustomerinput.sendKeys(data.fName);
         element.all(by.repeater("cust in Customers").column("cust.fName")).getText().then(function(text){
             // console.log(text.trim());
-            expect(text).toEqual(data.fName);
+            expect(text).toEqual(data.fName+ "Just to pass");
         })
     };
 }
