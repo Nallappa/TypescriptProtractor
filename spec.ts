@@ -22,17 +22,20 @@ let Drop = new dropdwonutil();
 
 describe('Bank Manager Login Test', function() {
 
-    it('Login as Bank Manager', function() {
-        let Title : string;
+    beforeAll(function () {
         Base.navigateToURL(data.testsiteurl);
         wait.AngularWait;
-       Title = Base.getPageTitle();
-       console.log(Title);
-       let expected :string = "The title is something"
-       expect(expected).toBe(Title);
+        browser.getTitle().then(function(text){
+        console.log(text);
+        let expected :string = "Protractor practice website - Banking App"
+        expect(expected).toBe(text);
+        });
+    });
+
+    it('Login as Bank Manager', function() {
         Home.BankManagerlogin();
         // Home.Customerlogin();
-        // browser.sleep(4000);
+
     });
 
     // it("Add Customer",function(){

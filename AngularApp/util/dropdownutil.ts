@@ -5,7 +5,7 @@
 import {browser, element, by,WebElement} from 'protractor';
 import { isNull } from 'util';
 
-export class dropdwonutil {
+export class dropdownutil {
 
     public Selectbytext(locator: string,dropdownvalue : string) : void {
         // element.all(by.css("#userSelect option")).filter(function(elem, index) {

@@ -1,51 +1,59 @@
 
 
-var LocatorsAddcustomerpage = require('../locators/addcustomerlocators.json');
-var dataaddcustomerpage = require('../data/Addcustomerdata.json');
-var Addcustomerloactors = require('../objects/objcustomerpage.js');
-var WebElementutil = require('../util/webelementutil.js');
-var Alerthandleutil = require('../util/alerthandleutil.js');
-var Dropdownutil = require('../util/dropdownutil.js');
 
+import { webelementutil } from "../util/webelementutil";
+import { alerthandleutil } from "../util/alerthandleutil";
+import { dropdownutil } from "../util/dropdownutil";
+ import { waitutil } from "../util/waitutil";
+import locator from "../locators/addcustomerlocators";
+import data from "../data/Addcustomerdata";
 
-var webutil = new WebElementutil();
-// var locatoraddcustomerpage = new LocatorsAddcustomerpage();
-// var dataaddcustomerpage = new DataAddcustomerpage();
-var dropdownutil = new Dropdownutil();
-var objcustomerpage = new Addcustomerloactors();
+let webutil = new webelementutil();
+let wait = new waitutil();
+let dropdown = new dropdownutil();
+let alertutil = new alerthandleutil();
 
-module.exports = class Addcustomerdetails {
+ export class Addcustomerdetails {
 
-    gotoAddCustomer(){
-        // Addcustomerdetails.AddCustomer.click();
-        // objcustomerpage.AddCustomer;
+    public static Addcustomerbutton = webutil.Webelementreturn(locator.addcustomer)
+    public static Openaccountbutton = webutil.Webelementreturn(locator.openAccount)
+    public static SearchCustomerbutton = webutil.Webelementreturn(locator.searchcustomer)
+    public static Fnameinput = webutil.Webelementreturn(locator.searchcustomer)
+    public static Lnameinput = webutil.Webelementreturn(locator.searchcustomer)
+    public static Pcodeinput = webutil.Webelementreturn(locator.searchcustomer)
+    public static Addcustomeripbutton = webutil.Webelementreturn(locator.searchcustomer)
+    public static Customerdropdown = webutil.Webelementreturn(locator.customer)
+    public static Currencydropdown = webutil.Webelementreturn(locator.currency)
+    public static Processbutton = webutil.Webelementreturn(locator.processbutton)
+
+    public gotoAddCustomer() : void {
+        wait.WaitForElement(Addcustomerdetails.Addcustomerbutton);
+        Addcustomerdetails.Addcustomerbutton.click();
     };
 
-    gotoOpenAccount(){
-        objcustomerpage.OpenAccount.click();
+   public gotoOpenAccount() : void {
+        wait.WaitForElement(Addcustomerdetails.Openaccountbutton);
+        Addcustomerdetails.Openaccountbutton.click();
     };
 
-    gotoSearchCustomer(){
-        objcustomerpage.SearchCustomer.click();
+   public gotoSearchCustomer() : void {
+        wait.WaitForElement(Addcustomerdetails.SearchCustomerbutton);
+        Addcustomerdetails.SearchCustomerbutton.click();
     };
 
-    addCustomerInfo(){
-        objcustomerpage.fname.clear();
-        objcustomerpage.fname.sendKeys(dataaddcustomerpage.fName);
-        objcustomerpage.lname.clear();
-        objcustomerpage.lname.sendKeys(dataaddcustomerpage.lName);
-        objcustomerpage.pcode.clear();
-        objcustomerpage.pcode.sendKeys(dataaddcustomerpage.pCode);
-        objcustomerpage.addcustomerbutton.click();
-        var alertutil = new Alerthandleutil();
+   public addCustomerInfo() : void {
+        wait.WaitForElement(Addcustomerdetails.Fnameinput);
+        Addcustomerdetails.Fnameinput.sendKeys(data.fName);
+        Addcustomerdetails.Fnameinput.sendKeys(data.lName);
+        Addcustomerdetails.Fnameinput.sendKeys(data.pCode);
+        Addcustomerdetails.Addcustomeripbutton.click();
         alertutil.acceptalert();
     };
 
-    openAccount(){
-        dropdownutil.selectbytext(objcustomerpage.customerdropdown,dataaddcustomerpage.FullName);
-        dropdownutil.selectbytext(objcustomerpage.currencydropdown,dataaddcustomerpage.currency);
-        objcustomerpage.processbutton.click();
-        var alertutil = new Alerthandleutil();
+   public openAccount() : void {
+        dropdown.Selectbytext("#userSelect option",data.FullName);
+        dropdown.Selectbytext("#userSelect option",data.currency);
+        Addcustomerdetails.Processbutton.click();
         alertutil.acceptalert();
     };
 

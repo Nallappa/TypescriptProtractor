@@ -4,7 +4,6 @@
 import {browser, element, by,WebElement,ElementFinder} from 'protractor';
 // import { webelementset } from "../util/webelementset";
 import { webelementutil } from "../util/webelementutil";
-import { webelementclick } from "../util/webelementclick";
  import { waitutil } from "../util/waitutil";
 import data from "../locators/homepagelocators";
 
@@ -15,20 +14,15 @@ export class Mainflow  {
 
     public static Customerloginbutton = webutil.Webelementreturn(data.Customerbutton)
     public static Managerloginbutton = webutil.Webelementreturn(data.BankManagerbutton)
-    // public static Customerloginbutton = new webelementclick(webutil.Webelementreturn(data.BankManagerbutton));
-    // public static googleSearch = element(by.name("btnK"))
 
     public Customerlogin(): void {
-        // browser.sleep(5000);
-        // wait.AngularWait;
         wait.WaitForElement(Mainflow.Customerloginbutton);
         Mainflow.Customerloginbutton.click();
     } 
 
     public BankManagerlogin(): void {
-         wait.WaitForElement(Mainflow.Managerloginbutton);
+        wait.WaitForElement(Mainflow.Managerloginbutton);
         Mainflow.Managerloginbutton.click();
-        browser.sleep(4000);
     } 
 }
 
