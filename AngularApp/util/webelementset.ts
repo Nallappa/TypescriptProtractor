@@ -1,18 +1,13 @@
-// import {browser, element, by, WebElement} from 'protractor';
-//  import { waitutil } from "../util/waitutil";
+import {browser, element, by, ElementFinder} from 'protractor';
+ import { waitutil } from "../util/waitutil";
 
-// export class webelementset extends waitutil {
+export class webelementset extends waitutil {
 
-//     private WebElement;
-
-//     // constructor(selector) {
-//     //     super(selector);
-//     //     this.WebElement = selector;
-//     // }
+    public ElementFinder;
     
-//     public settext (WebElement,text : string) : void {
-//          WebElement.sendkeys(text);
-//     }
+    public settext (wem : ElementFinder,text : string) : void {
+         wem.sendkeys(text);
+    }
     
 
-// }
+}

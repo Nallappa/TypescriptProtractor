@@ -9,7 +9,9 @@
   "searchcustomer":"buttonText:Customers",
   "customer":"id:userSelect",
   "currency":"id:currency",
-  "processbutton":"buttonText:Process"
+  "processbutton":"buttonText:Process",
+  "searchcustomerinp":"model:searchCustomer",
+  "customertable":"repeater:cust in Customers"
   }
 
 

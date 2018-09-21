@@ -12,7 +12,7 @@ export class webelementutil {
         let locatorname =  locator[0];
         let locatorvalue = locator[1];
         var finalval = locatorname + "\(\"" + locatorvalue + "\"\)" ;
-        console.log(finalval);
+        // console.log(finalval);
 
         if( locatorname == "xpath" ){
             return  element(by.xpath(locatorvalue));
@@ -57,7 +57,15 @@ export class webelementutil {
             console.log("Please check the locator type or locator value")
         }
     }
-
+    public Verifywebelementexist (wem : ElementFinder) : boolean {
+        let value : boolean = false;
+         wem.isDisplayed().then(function(value){
+            return value;
+         });
+         return value;
+         console.log("The presence of element is" + value)
+        expect(value).toBe(true);
+    }
 }
 // element(by.buttonText("Bank Manager Login")).click();
 // browser.sleep(8000);

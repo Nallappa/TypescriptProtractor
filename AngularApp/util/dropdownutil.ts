@@ -2,11 +2,13 @@
  * Created by Nalli on 27-08-2018.
  */
 
-import {browser, element, by,WebElement} from 'protractor';
+import {browser, element, by,WebElement,ElementFinder} from 'protractor';
 import { isNull } from 'util';
 
-export class dropdownutil {
 
+export class dropdownutil {
+    
+    public : ElementFinder;
     public Selectbytext(locator: string,dropdownvalue : string) : void {
         // element.all(by.css("#userSelect option")).filter(function(elem, index) {
            element.all(by.css(locator)).filter(function(elem, index) {

@@ -17,7 +17,7 @@ export class waitutil {
 
     public WaitForElement(wem :ElementFinder ) : void  {
         let EC = protractor.ExpectedConditions;
-        browser.wait(EC.visibilityOf(wem), 30000);
+        browser.wait(EC.visibilityOf(wem), 60000);
     }
 
     // public FluentWait(Webelement) : any {
@@ -34,14 +34,6 @@ export class waitutil {
     //                 });
     //     }, 20 * 1000);
     // }
-    public verifywebelementexist (wem : ElementFinder) : boolean {
-        let value : boolean = false;
-         wem.isDisplayed().then(function(value){
-            return value;
-         });
-         return value;
-             // expect(element.isDisplayed()).toBe(true);
-    }
     // public gettext (Webelement) : string {
     //     return Webelement.gettext();
     //     // expect(element.isDisplayed()).toBe(true);
