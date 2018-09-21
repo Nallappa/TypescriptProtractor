@@ -1,22 +1,23 @@
 
-import {browser, element, by, protractor} from 'protractor';
+import {browser, element, by, protractor,ElementFinder,WebElement} from 'protractor';
 // import {protractor} from "protractor/built/ptor";
 
 
 export class waitutil {
 
-    private Webelement ;
-    constructor(selector) {
-        this.Webelement = selector;
-    }
+    public ElementFinder;
+//     //constructor  accepts dropdown as element
+//     constructor(webelement:ElementFinder) {
+//        this.ElementFinder = webelement;
+//     }
 
     public AngularWait() : void {
         browser.waitForAngular();
     }
 
-    public WaitForElement() : void  {
+    public WaitForElement(wem :ElementFinder ) : void  {
         let EC = protractor.ExpectedConditions;
-        browser.wait(EC.visibilityOf(this.Webelement), 30000);
+        browser.wait(EC.visibilityOf(wem), 30000);
     }
 
     // public FluentWait(Webelement) : any {
@@ -33,9 +34,13 @@ export class waitutil {
     //                 });
     //     }, 20 * 1000);
     // }
-    public verifywebelementexist () : boolean {
-        return this.Webelement.isDisplayed();
-        // expect(element.isDisplayed()).toBe(true);
+    public verifywebelementexist (wem : ElementFinder) : boolean {
+        let value : boolean = false;
+         wem.isDisplayed().then(function(value){
+            return value;
+         });
+         return value;
+             // expect(element.isDisplayed()).toBe(true);
     }
     // public gettext (Webelement) : string {
     //     return Webelement.gettext();

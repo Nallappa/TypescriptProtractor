@@ -1,16 +1,23 @@
-import {browser, element, by, WebElement} from 'protractor';
+import {browser, element, by, WebElement,ElementFinder} from 'protractor';
  import { waitutil } from "../util/waitutil";
 
 export class webelementclick extends waitutil {
 
-    private WebElement;
-    constructor(selector)  {
-        // this.WebElement = selector;
-        super(selector);
-        this.WebElement = selector;
-    }
-    public clickwebelement () : void {
-        this.WebElement.click();
+    // private WebElement;
+  public ElementFinder;
+    //constructor  accepts dropdown as element
+    // constructor(webelement:WebElement) {
+    //     super(webelement)
+    //    this.WebElement = webelement;
+    // }
+
+    // constructor(selector)  {
+    //     // this.WebElement = selector;
+    //     super(selector);
+    //     this.WebElement = selector;
+    // }
+    public clickwebelement (wem : ElementFinder) : void {
+        wem.click();
     }
     
 }

@@ -1,50 +1,53 @@
 /**
  * Created by Nalli on 27-08-2018.
  */
-import {browser, element, by,WebElement} from 'protractor';
-import { webelementset } from "../util/webelementset";
+import {browser, element, by,WebElement,ElementFinder} from 'protractor';
+// import { webelementset } from "../util/webelementset";
 import { webelementutil } from "../util/webelementutil";
 import { webelementclick } from "../util/webelementclick";
-// import { selectwrapper } from "../util/dropdownutil";
+ import { waitutil } from "../util/waitutil";
 import data from "../locators/homepagelocators";
 
-
-// let dropdown = new selectwrapper();
-
-export class webButton extends webelementclick {
-    
-    private webelement;
-    constructor(selector){
-        super(selector)
-        this.webelement = selector;
-    }
-
-    public buttonwebelement() : any {
-        return  this.webelement;
-    }
-
-
-}
-export class WebInput extends webelementset {}
-
 let webutil = new webelementutil();
+let wait = new waitutil();
 
 export class Mainflow  {
-    public BankManagerlogin(): void {
-    //  let bankmanager =  new webelementclick(webutil.Webelementreturn(data.BankManagerbutton));
-    webutil.Webelementreturn(data.BankManagerbutton).click;
-     new webButton(webutil.Webelementreturn(data.BankManagerbutton)).clickwebelement;
-    } 
+
+    public static Customerloginbutton = webutil.Webelementreturn(data.Customerbutton)
+    public static Managerloginbutton = webutil.Webelementreturn(data.BankManagerbutton)
+    // public static Customerloginbutton = new webelementclick(webutil.Webelementreturn(data.BankManagerbutton));
+    // public static googleSearch = element(by.name("btnK"))
 
     public Customerlogin(): void {
-        webutil.Webelementreturn(data.Customerbutton).click
+        // browser.sleep(5000);
+        // wait.AngularWait;
+        wait.WaitForElement(Mainflow.Customerloginbutton);
+        Mainflow.Customerloginbutton.click();
     } 
 
-
+    public BankManagerlogin(): void {
+         wait.WaitForElement(Mainflow.Managerloginbutton);
+        Mainflow.Managerloginbutton.click();
+        browser.sleep(4000);
+    } 
 }
 
 
+// export class webButton extends webelementclick {
+    
+//     private webelement;
+//     constructor(selector){
+//         super(selector)
+//         this.webelement = selector;
+//     }
 
+//     public buttonwebelement() : any {
+//         return  this.webelement;
+//     }
+
+
+// }
+// export class WebInput extends webelementset {}
 
 
 

@@ -1,13 +1,13 @@
 
-import {browser, element, by, WebElement} from 'protractor';
+import {browser, element, by, WebElement,ElementFinder} from 'protractor';
 // import { waitutil } from "../util/waitutil";
 
 
 export class webelementutil {
 
-    private WebElement;
+    private ElementFinder;
 
-   public Webelementreturn(ele : string) : WebElement {
+   public Webelementreturn(ele : string) : ElementFinder {
         let locator = ele.split(":");
         let locatorname =  locator[0];
         let locatorvalue = locator[1];
