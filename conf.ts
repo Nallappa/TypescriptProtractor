@@ -8,7 +8,6 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 const jasmineReporters = require('jasmine-reporters');
 const HTMLReport = require('protractor-html-reporter-2');
 const fs = require('fs-extra');
-const path = require('path');
 
 export let config: Config = {
   framework: 'jasmine',
@@ -41,12 +40,12 @@ export let config: Config = {
 // },
 
 onPrepare() {
-  fs.emptyDir('AngularApp/_report', (err) => { err && console.log(err); });
+  fs.emptyDir('AngularApp/Reports', (err) => { err && console.log(err); });
   const jasmineEnv = jasmine.getEnv();
   const specReporter = new SpecReporter({ spec: { displayStacktrace: true } });
   const xmlReporter = new jasmineReporters.JUnitXmlReporter({
     consolidateAll: true,
-    savePath: './AngularApp/_report',
+    savePath: './AngularApp/Reports',
     filePrefix: 'e2exmlresults'
   });
   const screenshotReporter = {
@@ -56,7 +55,7 @@ onPrepare() {
           const browserName = caps.get('browserName');
 
           browser.takeScreenshot().then(function (png) {
-            const stream = fs.createWriteStream('AngularApp/_report/' + browserName + '-' + result.fullName + '.png');
+            const stream = fs.createWriteStream('AngularApp/Reports/' + browserName + '-' + result.fullName + '.png');
             stream.write(new Buffer(png, 'base64'));
             stream.end();
           });
@@ -78,7 +77,7 @@ onComplete: function() {
     platform = caps.get('platform');
     const testConfig = {
       reportTitle: 'Protractor Test Report',
-      outputPath: './AngularApp/_report',
+      outputPath: './AngularApp/Reports',
       outputFilename: 'ProtractorTestReport',
       screenshotPath: '.',
       testBrowser: browserName,
@@ -87,7 +86,7 @@ onComplete: function() {
       screenshotsOnlyOnFailure: true,
       testPlatform: platform
     };
-    new HTMLReport().from('AngularApp/_report/e2exmlresults.xml', testConfig);
+    new HTMLReport().from('AngularApp/Reports/e2exmlresults.xml', testConfig);
   });
 }     
 };
