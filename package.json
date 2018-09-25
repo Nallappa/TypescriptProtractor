@@ -15,7 +15,8 @@
     "jasmine": "^2.4.1",
     "protractor": "5.1.2",
     "serenity-js": "^1.10.13",
-    "typescript-cli": "^0.1.0"
+    "typescript-cli": "^0.1.0",
+    "winston": "^3.1.0"
   },
   "devDependencies": {
     "@types/core-js": "^0.9.41",

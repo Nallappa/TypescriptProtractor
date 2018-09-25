@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="3" time="18.955">
+ <testsuite name="Customer Transaction verification" timestamp="2018-09-24T14:44:27" hostname="localhost" time="18.955" errors="0" tests="3" skipped="3" disabled="0" failures="0">
+  <testcase classname="Customer Transaction verification" name="Select Customer Test" time="0.003">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="Customer Transaction verification" name="ValidateDesposits Test" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="Customer Transaction verification" name="ValidateWithDrawl Test" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+ </testsuite>
+</testsuites>

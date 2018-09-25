@@ -7,6 +7,9 @@ import { isNull } from 'util';
 
 
 export class dropdownutil {
+    constructor() {
+        
+    }
     
     public : ElementFinder;
     public Selectbytext(locator: string,dropdownvalue : string) : void {
@@ -72,6 +75,10 @@ export class dropdownutil {
             });
 
         }
+
+        // public waitTillPresent() {
+        //     browser.wait(() => element().isDisplayed())
+        // }
 
      // let selector = "#userSelect option";
     // Drop.Getdropdownvalues(selector);

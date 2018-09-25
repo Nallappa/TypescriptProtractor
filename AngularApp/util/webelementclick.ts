@@ -3,10 +3,9 @@ import {browser, element, by, WebElement,ElementFinder} from 'protractor';
 
 export class webelementclick extends waitutil {
 
-    // private WebElement;
-  public ElementFinder;
-    //constructor  accepts dropdown as element
-    // constructor(webelement:WebElement) {
+    public WebElement :ElementFinder;
+    // constructor  accepts dropdown as element
+    // constructor(webelement:ElementFinder) {
     //     super(webelement)
     //    this.WebElement = webelement;
     // }

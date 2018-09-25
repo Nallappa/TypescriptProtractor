@@ -1,4 +1,11 @@
 
+// export default {
+//     "addcustomerbutton" : {
+//         "locatorType": "",
+//         "locatorValue" : ""
+//     }
+// }
+
  export default {
   "addcustomerbutton":"class:btn btn-lg tab",
   "fName":"model:fName",

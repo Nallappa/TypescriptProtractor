@@ -13,32 +13,43 @@ import { dropdownutil } from "../util/dropdownutil";
 import { waitutil } from "../util/waitutil";
 import locator from "../locators/customertransactionslocators";
 import data from "../data/CustomerTransactionsdata";
+import {CutomLogger} from "../Logger/CustomLogger";
 
 let wait = new waitutil();
 let Base = new BasePage();
 let Home = new Mainflow();
 let Customertrans = new CustomerTransactions();
+let logobj = CutomLogger.logger;
 
 let webutil = new webelementutil();
 let dropdown = new dropdownutil();
 
 describe('Customer Transaction verification', function() {
+
+
     beforeAll(function () {
         Base.navigateToURL(commondata.testsiteurl);
-        wait.AngularWait;
+        browser.sleep(5000);
         browser.getTitle().then(function(text){
-        console.log(text);
+            logobj.log('info','Verify the title');
+            logobj.debug('This is debug');
+            logobj.warn("This is warn")
+            logobj.info('just for logging with info method');
+            logobj.error("This is error")
+            // logobj.emerg("Tjos os an emerge")
+            // logobj.alert("Tjos os an alert")
         expect(commondata.urlname).toBe(text);
         });
     });
 
     it('Select Customer Test', function() {
+        // console.log("The browser title is:" + Base.getPageTitle);
         Home.Customerlogin();
         dropdown.Selectbytext("#userSelect option",data.Customername);
         CustomerTransactions.Loginbutton.click();
     });
 
-    it('ValidateDesposits Test', function() {
+   it('ValidateDesposits Test', function() {
         wait.WaitForElement(CustomerTransactions.Depositbtn);
         CustomerTransactions.Depositbtn.click();
         browser.sleep(1000);
@@ -52,7 +63,7 @@ describe('Customer Transaction verification', function() {
         });
     });
 
-    it('ValidateWithDrawl Test', function() {
+    xit('ValidateWithDrawl Test', function() {
         wait.WaitForElement(CustomerTransactions.Withdrawbtn);
         CustomerTransactions.Withdrawbtn.click();
         browser.sleep(1000);
@@ -67,14 +78,6 @@ describe('Customer Transaction verification', function() {
     });
 });
 
- // CustomerTransactions.Depositamountlbl.getText().then(function(Depositamountmessage){
-        //     console.log(Depositamountmessage);
-        //     expect(Depositamountmessage).toEqual(data.Depositmessage);
-        // });
-       // Home.Customerlogin();
-        // Customertrans.Selectcustomer();
-        // Customertrans.ValidateDesposits();
-        // Customertrans.ValidateWithDrawl();
        
 
 

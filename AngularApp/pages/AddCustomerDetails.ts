@@ -13,6 +13,7 @@ let wait = new waitutil();
 let dropdown = new dropdownutil();
 
  export class Addcustomerdetails {
+
     public static Addcustomerbutton = webutil.Webelementreturn(locator.addcustomerbutton)
     public static Openaccountbutton = webutil.Webelementreturn(locator.openAccount)
     public static SearchCustomerbutton = webutil.Webelementreturn(locator.searchcustomer)
@@ -67,7 +68,11 @@ let dropdown = new dropdownutil();
         Addcustomerdetails.Searchcustomerinput.sendKeys(data.fName);
         element.all(by.repeater("cust in Customers").column("cust.fName")).getText().then(function(text){
             // console.log(text.trim());
-            expect(text).toEqual(data.fName+ "Just to pass");
+            expect(text).toEqual(data.fName+ "Just to Fail");
         })
     };
 }
+
+// private viewByDropdown : dropdownutil = new dropdownutil("", "");
+    
+// webutil.Webelementreturn(locator.addcustomerbutton);

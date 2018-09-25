@@ -14,9 +14,10 @@ export let config: Config = {
   capabilities: {
     browserName: 'chrome'
   },
+  resultJsonOutputFile:"", //json report
   getPageTimeout : 1000, //for page timeouts
-    // specs: ['./AngularApp/spec/Customerspec.js'],
-    specs: ['./AngularApp/spec/BankManagerLoginspec.js'],
+    specs: ['./AngularApp/spec/Customerspec.js'],
+    // specs: ['./AngularApp/spec/BankManagerLoginspec.js'],
     
   seleniumAddress: 'http://localhost:4444/wd/hub',
 //   params: {

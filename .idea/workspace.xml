@@ -2,60 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1dde300-304c-499e-b075-ceb00c7a23bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Protractor/.idea/Protractor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Protractor/objects/objcustomerpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Protractor/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Protractor/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Protractor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/BeautifulReportingconf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/Databaseconnection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/Datepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/Dir1/App1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/Dir2/App2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/JasminReportingeconf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/Misc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/MyApp2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/conf - Copy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/Protractor/conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/log1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/runner.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Protractor/screenshots/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/combined.json" beforeDir="false" afterPath="$PROJECT_DIR$/Protractor/screenshots/combined.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/002a0039-0097-0089-0088-00a900b900c4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/00500099-001a-0050-0073-008a00ae00f4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/0054004a-00aa-0022-0098-00b300860084.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/00580022-003c-0097-0070-0095002c00ae.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/006200dc-0051-0077-006b-008c00bf0091.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/008200f6-00bc-00a5-0082-00b000e400da.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/008800ea-00cc-0089-0008-0020003f00b7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/00bf00cd-007b-0065-0061-00d500cb0087.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/00c50042-00cb-009e-00a4-00dc00470037.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/images/00e800b1-00d5-00fb-00d5-0061003f000d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/000d0009-00c7-0093-000d-00a800f400c5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/0019001d-0081-001d-00de-008900ec00ac.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/002a0039-0097-0089-0088-00a900b900c4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/003e00c9-0079-0027-001d-00bb0091002f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/004200a2-00e1-00d6-0024-00d40006009f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00500099-001a-0050-0073-008a00ae00f4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/0054004a-00aa-0022-0098-00b300860084.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00560065-0020-00e2-0021-001400fc00b5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00580022-003c-0097-0070-0095002c00ae.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/006200dc-0051-0077-006b-008c00bf0091.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00700088-0011-00de-0023-00f900260081.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00760054-0051-00cf-0078-00d600610045.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/008200f6-00bc-00a5-0082-00b000e400da.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/008800ea-00cc-0089-0008-0020003f00b7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/008c001a-0043-00e3-0065-00da006300f7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00bf00cd-007b-0065-0061-00d500cb0087.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00c50042-00cb-009e-00a4-00dc00470037.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00e800b1-00d5-00fb-00d5-0061003f000d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/screenshots/jsons/00ea0043-00af-0068-009a-000300de0017.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/Protractor/spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/target/screenshots/MyReportName_angularjshomepagetodolist_2018814 151458,428.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/target/screenshots/htmlReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Protractor/target/screenshots/screenshots/3aa339e4e9561184ca5aafc4bd8fdabf.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/AngularApp/Logger/CustomLogger.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Misc/LogFile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/_report/ProtractorTestReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/_report/chrome-Bank Manager Login Test Bank Manager Test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/_report/e2exmlresults.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/locators/addcustomerlocators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/locators/addcustomerlocators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/pages/AddCustomerDetails.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/pages/AddCustomerDetails.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/pages/BasePage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/pages/BasePage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/spec/BankManagerLoginspec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/spec/BankManagerLoginspec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/spec/Customerspec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/spec/Customerspec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/util/dropdownutil.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/util/dropdownutil.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/util/webelementclick.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/util/webelementclick.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.ts" beforeDir="false" afterPath="$PROJECT_DIR$/conf.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/spec.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -121,39 +85,45 @@
     <session id="-415222892">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="1" />
-          <entry key="ts" value="13" />
+          <entry key="CustomLogger" value="1" />
+          <entry key="js" value="2" />
+          <entry key="json" value="1" />
+          <entry key="ts" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="1" />
-          <entry key="TypeScript" value="13" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="TypeScript" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="7" />
-          <entry key="ts" value="737" />
+          <entry key="ts" value="1090" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="7" />
-          <entry key="TypeScript" value="737" />
+          <entry key="TypeScript" value="1090" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -163,14 +133,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Protractor/util/alerthandleutil.ts">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularApp/spec/Customerspec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
               <folding>
-                <element signature="e#2#50#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#52#132#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AngularApp/Logger/CustomLogger.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -185,7 +165,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Protractor" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -230,6 +210,9 @@
         <option value="$PROJECT_DIR$/Protractor/util/dropdownutil.ts" />
         <option value="$PROJECT_DIR$/Protractor/util/webelementutil.ts" />
         <option value="$PROJECT_DIR$/Protractor/util/windowhandleutil.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/util/webelementclick.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/spec/Customerspec.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/Logger/CustomLogger.ts" />
       </list>
     </option>
   </component>
@@ -262,7 +245,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -271,37 +253,23 @@
               <item name="DemoTypescript" type="b2602c69:ProjectViewProjectNode" />
               <item name="DemoTypescript" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DemoTypescript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoTypescript" type="462c0819:PsiDirectoryNode" />
-              <item name="AngularApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DemoTypescript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoTypescript" type="462c0819:PsiDirectoryNode" />
-              <item name="Protractor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DemoTypescript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoTypescript" type="462c0819:PsiDirectoryNode" />
-              <item name="Protractor" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536821763000" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537856228460" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\nalpasav\DemoTypescript\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -350,48 +318,51 @@
       <workItem from="1536744649008" duration="3539000" />
       <workItem from="1536830369193" duration="45000" />
       <workItem from="1536830509799" duration="8376000" />
+      <workItem from="1537782848774" duration="2819000" />
+      <workItem from="1537851543393" duration="4267000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Typescript - 2018.09.12 at 15h 29m 50s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 25m 07s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.12 at 15h 30m 17s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 25m 39s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.12 at 15h 31m 57s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 28m 03s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.12 at 15h 33m 42s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 30m 06s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.12 at 15h 34m 10s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 34m 07s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.12 at 15h 36m 50s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 39m 52s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.12 at 15h 37m 50s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 41m 16s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.12 at 15h 38m 08s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 41m 23s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.13 at 12h 25m 17s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 41m 45s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Typescript - 2018.09.13 at 12h 26m 21s.xml">
+    <history-entry file="Typescript - 2018.09.25 at 11h 43m 52s.xml">
       <configuration name="Typescript" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51397000" />
+    <option name="totallyTimeSpent" value="58483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1448" height="880" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2453505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -402,8 +373,8 @@
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.10775296" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39947438" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35479632" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.1327201" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -466,71 +437,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JavaScriptTestRunnerProtractor">
+        <watch expression="dropdownvalue" />
+        <watch expression="text" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conf - exampleTypescript.ts" />
-    <entry file="file://$PROJECT_DIR$/spec (2).ts" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/pages/BasePage.js" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/pages/HomePage.js" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/util/customlocators.js" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/util/select-wrapper.js" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/pages/AddCustomerDetails.js" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/json/OR.json" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/util/customlocators.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/test_spec/BankManagerLoginTest_spec.js" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/spec/spec.js" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/spec/conf.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/protractor/built/configParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/protractor/built/launcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specPageObjects.ts" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/util/select-wrapper.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/select-wrapper.ts" />
     <entry file="file://$PROJECT_DIR$/e2e/Pages/login.po.ts" />
     <entry file="file://$PROJECT_DIR$/PageObjectModel/PO/AngularPO.ts" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/spec/conf.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/spec/spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/spec/conf.ts" />
+    <entry file="file://$PROJECT_DIR$/AngularApp/spec/spec.ts" />
     <entry file="file://$PROJECT_DIR$/PageObjectModel/Lib/AngularLib.ts" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/test_spec/BankManagerLoginTest_spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/test_spec/BankManagerLoginTest_spec.ts" />
     <entry file="file://$PROJECT_DIR$/ConvertedJSFiles/conf - exampleTypescript.js" />
     <entry file="file://$PROJECT_DIR$/ConvertedJSFiles/confPageObjects.js" />
     <entry file="file://$PROJECT_DIR$/exampleTypescript.iml">
@@ -538,28 +460,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/e2e/spec/login.e2e-spec.ts" />
     <entry file="file://$PROJECT_DIR$/PageObjectModel/Specs/AngularSpec.ts" />
-    <entry file="file://$PROJECT_DIR$/AngularApp/pages/HomePage.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/json/OR.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/json/OR.ts" />
     <entry file="file://$PROJECT_DIR$/spec - e2e.ts" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/confPageObjects.ts" />
     <entry file="file://$PROJECT_DIR$/angularPage.ts" />
     <entry file="file://$PROJECT_DIR$/OR.json" />
@@ -605,27 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/alerthandleutil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/pages/AddCustomerDetails.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Protractor/util/alerthandleutil.js" />
     <entry file="file://$PROJECT_DIR$/AngularApp/pages/BasePage.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -633,58 +515,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/waitutil.ts">
+    <entry file="file://$PROJECT_DIR$/Protractor/util/waitutil.ts" />
+    <entry file="file://$PROJECT_DIR$/Protractor/util/opennewbrowserutil.ts" />
+    <entry file="file://$PROJECT_DIR$/Protractor/util/ngclickutil.ts" />
+    <entry file="file://$PROJECT_DIR$/Protractor/util/windowhandleutil.ts" />
+    <entry file="file://$PROJECT_DIR$/Protractor/util/webelementutil.ts" />
+    <entry file="file://$PROJECT_DIR$/Protractor/util/dropdownutil.ts" />
+    <entry file="file://$PROJECT_DIR$/Protractor/util/alerthandleutil.ts" />
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/webelementclick.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="192">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/opennewbrowserutil.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/ngclickutil.ts">
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/opennewbrowserutil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="e#2#50#0" expanded="true" />
-          </folding>
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/windowhandleutil.ts">
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/ngclickutil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/errorhandling.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/alerthandleutil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/webelementset.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/spec/BankManagerLoginspec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/dropdownutil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="70" lean-forward="true" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/Logger/CustomLogger">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Misc/LogFile.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/util/waitutil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/pages/AddCustomerDetails.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/pages/HomePage.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/selenium-webdriver/lib/promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="2952" column="26" selection-start-line="2952" selection-start-column="26" selection-end-line="2952" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/winston/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/spec/Customerspec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/webelementutil.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/dropdownutil.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Protractor/util/alerthandleutil.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
           <folding>
-            <element signature="e#2#50#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#52#132#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/Logger/CustomLogger.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>

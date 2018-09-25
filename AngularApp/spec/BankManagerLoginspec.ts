@@ -19,16 +19,21 @@ let Customer = new Addcustomerdetails();
 describe('Bank Manager Login Test', function() {
 
     beforeAll(function () {
-        Base.navigateToURL(data.testsiteurl);
-        wait.AngularWait;
-        browser.getTitle().then(function(text){
-        console.log(text);
-        let expected :string = "Protractor practice website - Banking App"
-        expect(expected).toBe(text);
-        });
+
+        // Base.navigateToURL(data.testsiteurl);
+        // wait.AngularWait;
+        // browser.getTitle().then(function(text){
+        // console.log(text);
+        // let expected :string = "Protractor practice website - Banking App"
+        // expect(expected).toBe(text);
+        // });
     });
 
     it('Bank Manager Test', function() {
+        Base.navigateToURL(data.testsiteurl);
+        wait.AngularWait;
+        let title =  Base.getPageTitle;
+        console.log(title);
         Home.BankManagerlogin();
         Customer.gotoAddCustomer();
         Customer.addCustomerInfo();

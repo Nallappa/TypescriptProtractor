@@ -28,7 +28,7 @@ describe('Bank Manager Login Test', function() {
         });
     });
 
-    it('Bank Manager Test', function() {
+   it('Bank Manager Test', function() {
         Home.BankManagerlogin();
         Customer.gotoAddCustomer();
         Customer.addCustomerInfo();
