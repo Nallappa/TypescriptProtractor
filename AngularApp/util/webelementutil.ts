@@ -7,10 +7,12 @@ export class webelementutil {
 
     private ElementFinder;
 
-   public Webelementreturn(ele : string) : ElementFinder {
+   public Webelementreturn( ele : string) : ElementFinder {
         let locator = ele.split(":");
         let locatorname =  locator[0];
         let locatorvalue = locator[1];
+        // let locatorname =  locatortype;
+        // let locatorvalue = locvalue;
         var finalval = locatorname + "\(\"" + locatorvalue + "\"\)" ;
         // console.log(finalval);
 

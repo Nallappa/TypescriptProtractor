@@ -31,6 +31,7 @@ describe('Customer Transaction verification', function() {
         Base.navigateToURL(commondata.testsiteurl);
         browser.sleep(5000);
         browser.getTitle().then(function(text){
+            // browser.pause();
             logobj.log('info','Verify the title');
             logobj.debug('This is debug');
             logobj.warn("This is warn")
@@ -63,7 +64,7 @@ describe('Customer Transaction verification', function() {
         });
     });
 
-    xit('ValidateWithDrawl Test', function() {
+    it('ValidateWithDrawl Test', function() {
         wait.WaitForElement(CustomerTransactions.Withdrawbtn);
         CustomerTransactions.Withdrawbtn.click();
         browser.sleep(1000);

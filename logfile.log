@@ -1,0 +1,30 @@
+2018-09-25T07:00:27.343Z info: Verify the title
+2018-09-25T07:00:27.346Z debug: This is debug
+2018-09-25T07:00:27.347Z warn: This is warn
+2018-09-25T07:00:27.347Z info: just for logging with info method
+2018-09-25T07:00:27.348Z error: This is error
+2018-09-25T07:09:44.027Z info: Verify the title
+2018-09-25T07:09:44.030Z debug: This is debug
+2018-09-25T07:09:44.030Z warn: This is warn
+2018-09-25T07:09:44.031Z info: just for logging with info method
+2018-09-25T07:09:44.031Z error: This is error
+2018-09-25T07:10:56.369Z info: Verify the title
+2018-09-25T07:10:56.371Z debug: This is debug
+2018-09-25T07:10:56.371Z warn: This is warn
+2018-09-25T07:10:56.372Z info: just for logging with info method
+2018-09-25T07:10:56.372Z error: This is error
+2018-09-25T07:11:38.404Z info: Verify the title
+2018-09-25T07:11:38.407Z debug: This is debug
+2018-09-25T07:11:38.407Z warn: This is warn
+2018-09-25T07:11:38.407Z info: just for logging with info method
+2018-09-25T07:11:38.408Z error: This is error
+2018-09-28T12:05:11.687Z info: Verify the title
+2018-09-28T12:05:11.691Z debug: This is debug
+2018-09-28T12:05:11.692Z warn: This is warn
+2018-09-28T12:05:11.693Z info: just for logging with info method
+2018-09-28T12:05:11.693Z error: This is error
+2018-09-28T12:08:46.020Z info: Verify the title
+2018-09-28T12:08:46.021Z debug: This is debug
+2018-09-28T12:08:46.022Z warn: This is warn
+2018-09-28T12:08:46.022Z info: just for logging with info method
+2018-09-28T12:08:46.022Z error: This is error

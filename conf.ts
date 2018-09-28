@@ -8,14 +8,16 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 const jasmineReporters = require('jasmine-reporters');
 const HTMLReport = require('protractor-html-reporter-2');
 const fs = require('fs-extra');
+const JSONReporter = require('jasmine-json-test-reporter');
 
 export let config: Config = {
   framework: 'jasmine',
   capabilities: {
     browserName: 'chrome'
   },
-  resultJsonOutputFile:"", //json report
+  resultJsonOutputFile:"./testResults.json", //json report
   getPageTimeout : 1000, //for page timeouts
+  // directConnect:true,
     specs: ['./AngularApp/spec/Customerspec.js'],
     // specs: ['./AngularApp/spec/BankManagerLoginspec.js'],
     
@@ -64,6 +66,11 @@ onPrepare() {
       }
     }
   };
+jasmine.getEnv().addReporter(new JSONReporter({
+	file: 'jasmine-test-results.json',
+	beautify: true,
+	indentationLevel: 4 // used if beautify === true
+}));
   jasmineEnv.addReporter(specReporter);
   jasmineEnv.addReporter(xmlReporter);
   jasmineEnv.addReporter(screenshotReporter);

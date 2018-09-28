@@ -1,0 +1,75 @@
+{
+    "suite1": {
+        "id": "suite1",
+        "description": "Customer Transaction verification",
+        "fullName": "Customer Transaction verification",
+        "failedExpectations": [],
+        "deprecationWarnings": [],
+        "status": "finished",
+        "specs": [
+            {
+                "id": "spec0",
+                "description": "Select Customer Test",
+                "fullName": "Customer Transaction verification Select Customer Test",
+                "failedExpectations": [],
+                "passedExpectations": [
+                    {
+                        "matcherName": "toBe",
+                        "message": "Passed.",
+                        "stack": "",
+                        "passed": true
+                    }
+                ],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "status": "passed"
+            },
+            {
+                "id": "spec1",
+                "description": "ValidateDesposits Test",
+                "fullName": "Customer Transaction verification ValidateDesposits Test",
+                "failedExpectations": [],
+                "passedExpectations": [
+                    {
+                        "matcherName": "toBe",
+                        "message": "Passed.",
+                        "stack": "",
+                        "passed": true
+                    },
+                    {
+                        "matcherName": "toEqual",
+                        "message": "Passed.",
+                        "stack": "",
+                        "passed": true
+                    }
+                ],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "status": "passed"
+            },
+            {
+                "id": "spec2",
+                "description": "ValidateWithDrawl Test",
+                "fullName": "Customer Transaction verification ValidateWithDrawl Test",
+                "failedExpectations": [],
+                "passedExpectations": [
+                    {
+                        "matcherName": "toBe",
+                        "message": "Passed.",
+                        "stack": "",
+                        "passed": true
+                    },
+                    {
+                        "matcherName": "toEqual",
+                        "message": "Passed.",
+                        "stack": "",
+                        "passed": true
+                    }
+                ],
+                "deprecationWarnings": [],
+                "pendingReason": "",
+                "status": "passed"
+            }
+        ]
+    }
+}
